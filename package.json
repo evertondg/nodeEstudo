@@ -1,0 +1,23 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "Site de noticias",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evertondg/nodeEstudo.git"
+  },
+  "author": "Everton De Grande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evertondg/nodeEstudo/issues"
+  },
+  "homepage": "https://github.com/evertondg/nodeEstudo#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
