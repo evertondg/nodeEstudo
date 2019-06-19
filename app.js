@@ -1,19 +1,15 @@
 var app = require('./config/server');
 
+var rotaNoticias = require('./app/routes/noticias')(app);
+//rotaNoticias(app);
 
-app.get('/', (req,res)=>{
-    res.render("home/index");
-    
-});
-
-app.get('/formulario-inclusao-noticia', (req,res)=>{
-    res.render("admin/form-add-noticia");
-});
+var rotaHome = require('./app/routes/home')(app);
+//rotaHome(app);
 
 
-app.get('/noticias', (req,res)=>{
-    res.render("noticias/noticias");
-});
+var rotaFormularioInclusaoNoticias = require('./app/routes/formulario-inclusao-noticia')(app);
+//rotaFormularioInclusaoNoticias(app);
+
 
 
 // express abstrai o servidor web e começa "ouvir na porta 3000"
